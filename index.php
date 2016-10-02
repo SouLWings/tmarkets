@@ -103,11 +103,10 @@ if (!$mail->send()) {
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php"><font color= #40e0d0 size="4px">Home</font></a></li>
+            <li><a href="service.php">Our Service</a></li>
+            <li><a href="http://www.siambitcoin.com/">Webboard</a></li>
+            <li><a href="https://www.bitcoinaec.com/BitCoinAEC/home/">Trading Bit Coin</a></li>
             <li><a href="contact.php">Contact</a></li>
-
-
-              </ul>
-            </li>
           </ul>
           <!--ul class="nav navbar-nav navbar-right">
             <li><a href="../navbar/">Default</a></li>
@@ -161,7 +160,9 @@ $member['upline_ids'] = 'liucina,jeffyong,junie111,ocw111,ads01,';
           </p>
           <small>
 			  Buy: THB 34.00/USD<br />
-Sell: THB 38.00/USD
+Sell: THB 38.00/USD<br />
+			  Buy: MYR 3.80/USD<br />
+Sell: MYR 4.35/USD<br />
           </small>
 
 	  </a>
@@ -180,7 +181,9 @@ Sell: THB 38.00/USD
           </p>
           <small>
 			  Buy : THB 19,270/BTC<br />
-  Sell: THB 21,465/BTC
+  Sell: THB 21,465/BTC<br />
+  			  Buy: MYR 2,455/USD<br />
+  Sell: MYR 2,525/USD<br />
           </small>
 	  </a>
     </div>
@@ -197,7 +200,9 @@ Sell: THB 38.00/USD
           </p>
           <small>
 			  Buy: THB 34.00/USD<br />
- Sell: THB 37.00/USD
+ Sell: THB 37.00/USD<br />
+ 			  Buy: MYR 3.80/USD<br />
+ Sell: MYR 4.35/USD<br />
           </small>
 	  </a>
     </div>
@@ -214,7 +219,9 @@ Sell: THB 38.00/USD
           </p>
           <small>
 			  Buy: THB 34.00/USD<br />
- Sell: THB 37.00/USD
+ Sell: THB 37.00/USD<br />
+ 			  Buy: MYR 3.80/USD<br />
+ Sell: MYR 4.35/USD<br />
           </small>
 	  </a>
     </div>
@@ -233,7 +240,9 @@ Sell: THB 38.00/USD
           </p>
           <small>
 			  Buy: THB 32.00/USD<br />
-			  Sell: THB 36.00/USD
+			  Sell: THB 36.00/USD<br />
+			  Buy: MYR 3.90/USD<br />
+			  Sell: MYR 4.2/USD<br />
           </small>
 	  	</a>
     </div>

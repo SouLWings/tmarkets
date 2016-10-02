@@ -107,10 +107,10 @@ if (!$mail->send()) {
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="index.php"><font color= #40e0d0 size="4px">Home</font></a></li>
-            <li><a href="service.php">Our Service</a></li>
+            <li class="active"><a href="service.php">Our Service</a></li>
             <li><a href="http://www.siambitcoin.com/">Webboard</a></li>
             <li><a href="https://www.bitcoinaec.com/BitCoinAEC/home/">Trading Bit Coin</a></li>
-            <li class="active"><a href="contact.php">Contact</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
           <!--ul class="nav navbar-nav navbar-right">
             <li><a href="../navbar/">Default</a></li>
@@ -123,65 +123,38 @@ if (!$mail->send()) {
 
 
 
-    <div class="container" style="min-height:calc( 100% - 123px );">
-    <form class="form-horizontal" style="background: rgba(0,0,0,0.85);" action='<?php echo $_SERVER['PHP_SELF']?>' method='POST'>
-    <fieldset>
-    <div class="col-sm-12">
-
-    <!-- Form Name -->
-    <legend>Inquiry</legend>
-
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-sm-4 control-label" for="name">Name</label>
-      <div class="col-sm-6 col-lg-4">
-      <input id="name" name="name" type="text" placeholder="your name" class="form-control input-md" required="">
-
-      </div>
-    </div>
-
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-sm-4 control-label" for="phone">Contact</label>
-      <div class="col-sm-6 col-lg-4">
-      <input id="phone" name="phone" type="text" placeholder="mobile phone no." class="form-control input-md" required="">
-
-      </div>
-    </div>
-
-    <!-- Text input-->
-    <div class="form-group">
-      <label class="col-sm-4 control-label" for="email">Email</label>
-      <div class="col-sm-6 col-lg-4">
-      <input id="email" name="email" type="text" placeholder="email address" class="form-control input-md" required="">
-
-      </div>
-    </div>
-
-    <!-- Textarea -->
-    <div class="form-group">
-      <label class="col-sm-4 control-label" for="message">Message</label>
-      <div class="col-sm-6 col-lg-4">
-        <textarea class="form-control" id="message" name="message" rows="5" required=""></textarea>
-      </div>
-    </div>
-
-
-    <!-- Button -->
-    <div class="form-group">
-      <!-- <label class="col-sm-4 control-label" for=""> </label> -->
-      <div class="col-sm-offset-4 col-sm-4 text-center">
-        <button type="submit" class="btn btn-5 btn-5b fa-send"><span>Send</span></button>
-      </div>
-    </div>
-
-<!--col-sm-12 collapse -->
-    </div>
-
-
-    </fieldset>
-    </form>
-
+    <div class="container " style="min-height:calc( 100% - 123px );    background: rgba(0,0,0,0.85);color:#ddd">
+    	<h1>Our Service</h1>
+		<p>
+			W3Currency aims to provide a platform for the online e-coin players who wish to exchange the items or products online.
+		</p>
+		<p>
+			We are trusted currency exchanger with more than 5 years experience. Our service are fast and we promise to be performed and completed within 1 hour from the time of your request during our operating hours. We operate 7 days a week.
+		</p>
+		<h2>
+			Get ready in 3 simple steps:
+		</h2>
+		<div class='row'>
+			<div class='col-sm-4'>
+				<h3>1. Request for Top-up</h3>
+				<p>
+					Deposit money in to our bank account and drop in a top-up request.
+				</p>
+			</div>
+			<div class='col-sm-4'>
+				<h3>2. Successful Top-Up</h3>
+				<p>
+					Your request is processed instantly upon confirmation of your payment.
+				</p>
+			</div>
+			<div class='col-sm-4'>
+				<h3>3. Convert to targeted e-coins</h3>
+				<p>
+					You can transfer the money to your online e-coin platform Account. Enjoy!
+				</p>
+			</div>
+		</div>
+		<br />
     </div>
 
 

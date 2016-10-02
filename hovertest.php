@@ -1,183 +1,80 @@
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<script src="js/jquery-3.1.0.min.js" type="text/javascript"> </script>
-<script src="js/bootstrap.min.js" type="text/javascript"> </script>
-<script src="https://use.fontawesome.com/85b96044da.js"></script>
-
-<style>
+<?php
 
 
+$venue = [];
 
-.hovereffect {
-  width: 100%;
-  /*height: 100%;*/
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-  background: #42b078;
-}
+$venue[] = array(
+	'state' => 'Selangor',
+	'state' => 'Selangor',
+	'name' => 'OUG Shuttle Bug Sdn.Bhd.',
+	'address' => 'OUG Market Place, 4th Floor, 2, Jalan Hujan RahmatTaman Overseas Union, 58200',
+	'courts' => array(
+		array('type' => 'Rubberized Badminton', 'price' => 15),
+	)
+);
 
-.hovereffect .overlay {
-  width: 100%;
-  /*height: 100%;*/
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  padding: 50px 20px;
-}
+$venue[] = array(
+	'state' => 'Selangor',
+	'name' => 'Stadium Juara Bukit Kiara',
+	'address' => 'Jalan Bukit Kiara 1, Bukit Kiara, 60000',
+	'courts' => array(
+		array('type' => 'Badminton', 'price' => 30),
+	)
+);
 
-.hovereffect img {
-  display: block;
-  position: relative;
-  max-width: none;
-  width: calc(100% + 20px);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px,0,0);
-  transform: translate3d(-10px,0,0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+$venue[] = array(
+	'state' => 'Penang',
+	'name' => 'PJ Futsal Center',
+	'address' => 'Lot 5, Jalan 51A/223, 46100',
+	'courts' => array(
+		array('type' => 'Futsal', 'price' => 100),
+	)
+);
 
-.hovereffect:hover img {
-  opacity: 0.4;
-  filter: alpha(opacity=40);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
+$venue[] = array(
+	'state' => 'Penang',
+	'name' => 'Samba De Futsal',
+	'address' => 'Jalan 225, Seksyen 51a, 46100 Petaling Jaya, Selangor',
+	'courts' => array(
+		array('type' => 'Futsal', 'price' => 140),
+	)
+);
 
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  overflow: hidden;
-  padding: 0.5em 0;
-  background-color: transparent;
-}
+$venue[] = array(
+	'state' => 'Johor',
+	'name' => 'Arena Sukan Champion',
+	'address' => 'Lot 1020, Jalan Cempaka, Kampung Sungai Kayu Ara, Mukim Damansara, 47400 PJ',
+	'courts' => array(
+		array('type' => 'Badminton', 'price' => 32),
+	)
+);
 
-.hovereffect h2:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  content: '';
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
-}
+$venue[] = array(
+	'state' => 'Johor',
+	'name' => 'Ara Courts Badminton Hall',
+	'address' => 'Lot 997,Jalan Dahlia Kampung Sungai Kayu Ara 47400',
+	'courts' => array(
+		array('type' => 'Badminton', 'price' => 12),
+	)
+);
 
-.hovereffect:hover h2:after {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
+$venue[] = array(
+	'state' => 'Selangor',
+	'name' => 'Sports Affairs Cheras',
+	'address' => 'Lot 44621, Jalan Perdana 1, Taman Segar Perdana, Batu 9 Cheras,43200 Cheras, Selangor, Malaysia',
+	'courts' => array(
+		array('type' => 'Futsal', 'price' => 15),
+		array('type' => 'Badminton', 'price' => 24),
+	)
+);
 
-.hovereffect a, .hovereffect p {
-  color: #FFF;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
-}
+$venue[] = array(
+	'state' => 'Kuala Lumpur',
+	'name' => 'Sendayan Sport Center',
+	'address' => 'Lot 8097-C, Off Jalan Genting Kelang Mukim Setapak 53300 Kuala Lumpur',
+	'courts' => array(
+		array('type' => 'Futsal', 'price' => 80),
+	)
+);
 
-.hovereffect:hover a, .hovereffect:hover p {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-
-}
-
-
-
-
-</style>
-</head>
-
-
-<body>
-
-    
-
-<div class="container">
-<div class="row"> 
-
-  <div class=" col-xs-3 ">
-    <div class="hovereffect">
-      <img class="img-responsive" src="pm.png" alt="Perfect_Money">
-      
-       <div class="overlay">
-                <h2>Effect 12</h2>
-          <p> 
-             <a href="#">LINK HERE</a>
-          </p> 
-            </div>
-      </div>
-
-           
-  </div>
-
-
-  <div class="col-xs-3 ">
-    <div class="hovereffect">
-    <img class="img-responsive" src="Bitcoin.png" alt="Bitcoin">
-
-            <div class="overlay">
-                <h2>Effect 12</h2>
-          <p> 
-             <a href="#">LINK HERE</a>
-          </p> 
-            </div>
-    </div>
-  </div>
-
-  <div class="col-xs-3">
-    <div class="hovereffect">
-    <img class="img-responsive" src="Skrill.png" alt="Skrill">
-
-            <div class="overlay">
-                <h2>Effect 12</h2>
-          <p> 
-             <a href="#">LINK HERE</a>
-          </p> 
-            </div>
-    </div>
-  </div>
-  
-  <div class="col-xs-3">
-    <div class="hovereffect">
-     <img class="img-responsive" src="Neteller.jpg" alt="Neteller">
-
-            <div class="overlay">
-                <h2>Effect 12</h2>
-          <p> 
-             <a href="#">LINK HERE</a>
-          </p> 
-            </div>
-    </div>
-  </div>
-
-</div> <!--row collapse-->
-
-</div> <!--container collapse-->
-
-
-
-<!--form-->
-<div class="container">
-
-</div>
-
-
- </body>
- </html>
+echo json_encode(array('data'=>$venue,'responseCode'=>'200'));

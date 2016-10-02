@@ -152,7 +152,10 @@ if (isset($_POST['name'])){
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="index.php">Home</a></li>
+            <li><a href="index.php"><font color= #40e0d0 size="4px">Home</font></a></li>
+            <li><a href="service.php">Our Service</a></li>
+            <li><a href="http://www.siambitcoin.com/">Webboard</a></li>
+            <li><a href="https://www.bitcoinaec.com/BitCoinAEC/home/">Trading Bit Coin</a></li>
             <li><a href="contact.php">Contact</a></li>
           </ul>
         </div>
